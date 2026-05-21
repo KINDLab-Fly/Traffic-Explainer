@@ -20,6 +20,11 @@ dataset_localization/
   Android_Cross_Plat/
 ```
 
+Source links:
+
+- Localization data comes from [WM-JayLab/NetBench](https://github.com/WM-JayLab/NetBench), package `Level` folder in the [NetBench Google Drive dataset folder](https://drive.google.com/drive/u/0/folders/1dYGHKKJR5WS4cXISk9AtfW_gB9mdC2ED).
+- ISCX raw PCAPs follow the [ViktorAxelsen/TFE-GNN](https://github.com/ViktorAxelsen/TFE-GNN) preprocessing instructions and are downloaded from [UNB/CIC VPN 2016](https://www.unb.ca/cic/datasets/vpn.html) and [UNB/CIC Tor 2016](https://www.unb.ca/cic/datasets/tor.html).
+
 The code expects the following processed files for ISCX datasets:
 
 ```text
@@ -57,13 +62,15 @@ python3 scripts/preprocess_localization.py --dataset ios --overwrite
 python3 scripts/preprocess_localization.py --dataset android --overwrite
 ```
 
+The source CSVs are from [WM-JayLab/NetBench](https://github.com/WM-JayLab/NetBench), package `Level` folder in the [NetBench Google Drive dataset folder](https://drive.google.com/drive/u/0/folders/1dYGHKKJR5WS4cXISk9AtfW_gB9mdC2ED).
+
 By default, this reproduces the representation expected by the current model: 64-byte `head` and `pkt` arrays, padding value `65536`, and country labels in first-seen CSV order. The train split uses CSV rows whose `dataset_type` is `train`; all non-train rows are deterministically shuffled with seed `32` and split equally into validation and test sets. To preserve the CSV `dev` and `test` split labels instead, add `--split_strategy source`.
 
 ## Rebuild ISCX Arrays
 
-Our ISCX preprocessing follows the public TFE-GNN preprocessing recipe:
+Our ISCX preprocessing follows the public [TFE-GNN](https://github.com/ViktorAxelsen/TFE-GNN) preprocessing recipe:
 
-- Download the raw ISCX VPN/NonVPN and Tor/NonTor PCAP datasets from the UNB/CIC dataset pages.
+- Download the raw ISCX VPN/NonVPN PCAP datasets from [UNB/CIC VPN 2016](https://www.unb.ca/cic/datasets/vpn.html), and Tor/NonTor PCAP datasets from [UNB/CIC Tor 2016](https://www.unb.ca/cic/datasets/tor.html).
 - Use SplitCap to split raw captures into bidirectional flow/session pcaps.
 - Keep TCP sessions only.
 - Convert each session pcap into a per-session `.npz` file.

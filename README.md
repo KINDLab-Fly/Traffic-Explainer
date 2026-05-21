@@ -57,6 +57,11 @@ For step-by-step data reproduction, start here:
 
 [docs/DATA_REPRODUCTION.md](docs/DATA_REPRODUCTION.md)
 
+Source links:
+
+- Localization data: [WM-JayLab/NetBench](https://github.com/WM-JayLab/NetBench), package `Level` folder from the [NetBench Google Drive dataset link](https://drive.google.com/drive/u/0/folders/1dYGHKKJR5WS4cXISk9AtfW_gB9mdC2ED)
+- ISCX data: follow [ViktorAxelsen/TFE-GNN](https://github.com/ViktorAxelsen/TFE-GNN) preprocessing; raw data from [UNB/CIC VPN 2016](https://www.unb.ca/cic/datasets/vpn.html) and [UNB/CIC Tor 2016](https://www.unb.ca/cic/datasets/tor.html)
+
 Supporting references:
 
 - [docs/DATA.md](docs/DATA.md): expected file layout and preprocessing commands

@@ -22,6 +22,11 @@ pip install -r requirements-optional.txt
 
 Follow [DATA_REPRODUCTION.md](DATA_REPRODUCTION.md) to build or link the processed datasets expected by the code.
 
+Data source links:
+
+- Localization CSVs: [WM-JayLab/NetBench](https://github.com/WM-JayLab/NetBench), package `Level` folder in the [NetBench Google Drive dataset folder](https://drive.google.com/drive/u/0/folders/1dYGHKKJR5WS4cXISk9AtfW_gB9mdC2ED).
+- ISCX raw PCAPs: follow [ViktorAxelsen/TFE-GNN](https://github.com/ViktorAxelsen/TFE-GNN), with raw downloads from [UNB/CIC VPN 2016](https://www.unb.ca/cic/datasets/vpn.html) and [UNB/CIC Tor 2016](https://www.unb.ca/cic/datasets/tor.html).
+
 ## Rebuild IOS/Android Data
 
 If the processed localization pickles are absent, rebuild them from the raw CSV files:
@@ -35,7 +40,7 @@ The preprocessing is deterministic by default (`--seed 32`) and writes `train.pk
 
 ## Rebuild ISCX Data
 
-The raw PCAP preprocessing follows the same public workflow described by TFE-GNN: download the UNB/CIC ISCX datasets, use SplitCap to obtain bidirectional TCP flows, convert session pcaps to `.npz`, then construct the final byte-level arrays.
+The raw PCAP preprocessing follows the same public workflow described by [TFE-GNN](https://github.com/ViktorAxelsen/TFE-GNN): download the UNB/CIC ISCX datasets from [VPN 2016](https://www.unb.ca/cic/datasets/vpn.html) and [Tor 2016](https://www.unb.ca/cic/datasets/tor.html), use SplitCap to obtain bidirectional TCP flows, convert session pcaps to `.npz`, then construct the final byte-level arrays.
 
 If per-session ISCX `.npz` files already exist under `dataset/<name>/process_file/<class>/`, rebuild the arrays used by training/testing with:
 

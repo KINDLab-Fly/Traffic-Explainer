@@ -155,6 +155,8 @@ Alias: `ios`
 
 Task: classify packet samples by country/localization label.
 
+Source: [WM-JayLab/NetBench](https://github.com/WM-JayLab/NetBench), package `Level` folder in the [NetBench Google Drive dataset folder](https://drive.google.com/drive/u/0/folders/1dYGHKKJR5WS4cXISk9AtfW_gB9mdC2ED).
+
 Label mapping:
 
 | ID | Class |
@@ -178,6 +180,8 @@ The raw CSV contains `train`, `dev`, and `test` rows. The processing script keep
 Alias: `android`
 
 Task: classify packet samples by country/localization label.
+
+Source: [WM-JayLab/NetBench](https://github.com/WM-JayLab/NetBench), package `Level` folder in the [NetBench Google Drive dataset folder](https://drive.google.com/drive/u/0/folders/1dYGHKKJR5WS4cXISk9AtfW_gB9mdC2ED).
 
 Label mapping:
 
