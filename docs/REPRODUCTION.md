@@ -29,6 +29,24 @@ python3 scripts/preprocess_localization.py --dataset android --overwrite
 
 The preprocessing is deterministic by default (`--seed 32`) and writes `train.pkl`, `val.pkl`, `test.pkl`, and `country2id.pkl` under each localization dataset folder. The default `--split_strategy combined-random` matches the old preprocessing logic; use `--split_strategy source` to map CSV `dev` rows to validation and CSV `test` rows to test directly.
 
+## Rebuild ISCX Data
+
+If per-session ISCX `.npz` files already exist under `dataset/<name>/process_file/<class>/`, rebuild the arrays used by training/testing with:
+
+```bash
+python3 scripts/preprocess_iscx.py --dataset iscx-vpn --stage build --overwrite
+python3 scripts/preprocess_iscx.py --dataset iscx-nonvpn --stage build --overwrite
+python3 scripts/preprocess_iscx.py --dataset iscx-tor --stage build --overwrite
+python3 scripts/preprocess_iscx.py --dataset iscx-nontor --stage build --overwrite
+```
+
+To rebuild from raw pcaps, install `mono` for `SplitCap.exe`, install optional Python preprocessing dependencies, and use `--stage all`:
+
+```bash
+pip install -r requirements-optional.txt
+python3 scripts/preprocess_iscx.py --dataset iscx-vpn --stage all --overwrite
+```
+
 ## Train And Test Classification
 
 Single dataset:

@@ -1,2 +1,5 @@
 # Optional dependency for `--explanation shap`.
 shap>=0.42
+
+# Optional dependency for rebuilding ISCX arrays from per-session pcaps.
+scapy>=2.5
