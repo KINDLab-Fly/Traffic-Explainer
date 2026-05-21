@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# Local data and generated artifacts
+dataset
+dataset/
+dataset_localization
+dataset_localization/
+model/
+res/
+backend_logs/
+checkpoints/
+runs/
+outputs/
+artifacts/
+
+# Large ML artifacts
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.pkl
+
+# Notebooks and editor state
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

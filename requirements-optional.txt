@@ -1,0 +1,2 @@
+# Optional dependency for `--explanation shap`.
+shap>=0.42
