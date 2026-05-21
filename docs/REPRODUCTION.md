@@ -18,6 +18,17 @@ Optional SHAP support:
 pip install -r requirements-optional.txt
 ```
 
+## Rebuild IOS/Android Data
+
+If the processed localization pickles are absent, rebuild them from the raw CSV files:
+
+```bash
+python3 scripts/preprocess_localization.py --dataset ios --overwrite
+python3 scripts/preprocess_localization.py --dataset android --overwrite
+```
+
+The preprocessing is deterministic by default (`--seed 32`) and writes `train.pkl`, `val.pkl`, `test.pkl`, and `country2id.pkl` under each localization dataset folder. The default `--split_strategy combined-random` matches the old preprocessing logic; use `--split_strategy source` to map CSV `dev` rows to validation and CSV `test` rows to test directly.
+
 ## Train And Test Classification
 
 Single dataset:

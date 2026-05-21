@@ -45,3 +45,14 @@ ln -s /path/to/Traffic-Explainer-data/dataset_localization dataset_localization
 ```
 
 Generated checkpoints and explanation outputs are written to `model/` and `res/`. Both are ignored by git.
+
+## Rebuild Localization Pickles
+
+The tracked preprocessing entrypoint for IOS/Android localization data is:
+
+```bash
+python3 scripts/preprocess_localization.py --dataset ios --overwrite
+python3 scripts/preprocess_localization.py --dataset android --overwrite
+```
+
+By default, this reproduces the representation expected by the current model: 64-byte `head` and `pkt` arrays, padding value `65536`, and country labels in first-seen CSV order. The train split uses CSV rows whose `dataset_type` is `train`; all non-train rows are deterministically shuffled with seed `32` and split equally into validation and test sets. To preserve the CSV `dev` and `test` split labels instead, add `--split_strategy source`.
