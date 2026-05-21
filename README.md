@@ -66,6 +66,7 @@ Supporting references:
 
 - [docs/DATA.md](docs/DATA.md): expected file layout and preprocessing commands
 - [docs/DATASETS.md](docs/DATASETS.md): per-dataset labels, shapes, and split counts
+- [docs/SPLITCAP.md](docs/SPLITCAP.md): what SplitCap does and how to run the tracked wrapper
 
 ## Classification
 

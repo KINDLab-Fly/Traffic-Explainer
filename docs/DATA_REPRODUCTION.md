@@ -194,6 +194,20 @@ python3 scripts/preprocess_iscx.py --dataset iscx-tor --stage all --overwrite
 python3 scripts/preprocess_iscx.py --dataset iscx-nontor --stage all --overwrite
 ```
 
+To run only the SplitCap stage, use either:
+
+```bash
+scripts/splitcap_iscx.sh iscx-vpn
+```
+
+or:
+
+```bash
+python3 scripts/preprocess_iscx.py --dataset iscx-vpn --stage splitcap --overwrite
+```
+
+See [SPLITCAP.md](SPLITCAP.md) for details on what the old dataset-local `splitcap.sh` files do and how their filename-to-class mapping is represented in the tracked script.
+
 The `all` stage performs:
 
 ```text

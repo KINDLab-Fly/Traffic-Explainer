@@ -32,6 +32,7 @@ Traffic-Explainer/
     REPRODUCTION.md
     RELEASE_STRUCTURE.md
     RESULTS_STATUS.md
+    SPLITCAP.md
 ```
 
 Ignored local paths:

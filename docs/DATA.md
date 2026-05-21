@@ -115,3 +115,9 @@ python3 scripts/preprocess_iscx.py --dataset iscx-vpn --stage all --overwrite
 ```
 
 `--stage all` runs SplitCap, converts session pcaps to session `.npz`, and builds final runtime arrays. Tor uses non-overlapping 60-second windows after session conversion; the other ISCX datasets treat each session as one flow. The release script defaults to the original filesystem file order; use `--file_order sorted` for deterministic ordering on a new machine.
+
+For SplitCap-only guidance, see [SPLITCAP.md](SPLITCAP.md) or run:
+
+```bash
+scripts/splitcap_iscx.sh iscx-vpn
+```
