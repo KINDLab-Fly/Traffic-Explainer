@@ -59,6 +59,16 @@ By default, this reproduces the representation expected by the current model: 64
 
 ## Rebuild ISCX Arrays
 
+Our ISCX preprocessing follows the public TFE-GNN preprocessing recipe:
+
+- Download the raw ISCX VPN/NonVPN and Tor/NonTor PCAP datasets from the UNB/CIC dataset pages.
+- Use SplitCap to split raw captures into bidirectional flow/session pcaps.
+- Keep TCP sessions only.
+- Convert each session pcap into a per-session `.npz` file.
+- Aggregate those per-session `.npz` files into the final arrays consumed by training and explanation.
+
+Reference: [TFE-GNN README](https://github.com/ViktorAxelsen/TFE-GNN#pre-processing).
+
 The model loads the final ISCX arrays directly:
 
 ```text

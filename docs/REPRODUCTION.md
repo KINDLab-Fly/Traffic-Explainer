@@ -31,6 +31,8 @@ The preprocessing is deterministic by default (`--seed 32`) and writes `train.pk
 
 ## Rebuild ISCX Data
 
+The raw PCAP preprocessing follows the same public workflow described by TFE-GNN: download the UNB/CIC ISCX datasets, use SplitCap to obtain bidirectional TCP flows, convert session pcaps to `.npz`, then construct the final byte-level arrays.
+
 If per-session ISCX `.npz` files already exist under `dataset/<name>/process_file/<class>/`, rebuild the arrays used by training/testing with:
 
 ```bash
