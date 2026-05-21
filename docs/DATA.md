@@ -2,6 +2,8 @@
 
 This repository does not commit datasets or generated model artifacts.
 
+For per-dataset labels, shapes, split counts, and task definitions, see [DATASETS.md](DATASETS.md).
+
 Expected local paths from the repository root:
 
 ```text
