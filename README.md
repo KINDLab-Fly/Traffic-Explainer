@@ -53,7 +53,14 @@ ln -s /path/to/Traffic-Explainer-data/dataset dataset
 ln -s /path/to/Traffic-Explainer-data/dataset_localization dataset_localization
 ```
 
-See [docs/DATA.md](docs/DATA.md) for the expected file layout and [docs/DATASETS.md](docs/DATASETS.md) for per-dataset labels, shapes, and split counts.
+For step-by-step data reproduction, start here:
+
+[docs/DATA_REPRODUCTION.md](docs/DATA_REPRODUCTION.md)
+
+Supporting references:
+
+- [docs/DATA.md](docs/DATA.md): expected file layout and preprocessing commands
+- [docs/DATASETS.md](docs/DATASETS.md): per-dataset labels, shapes, and split counts
 
 ## Classification
 

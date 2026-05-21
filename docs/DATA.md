@@ -2,6 +2,8 @@
 
 This repository does not commit datasets or generated model artifacts.
 
+For a step-by-step guide from raw/source files to the arrays used by training and explanation, see [DATA_REPRODUCTION.md](DATA_REPRODUCTION.md).
+
 For per-dataset labels, shapes, split counts, and task definitions, see [DATASETS.md](DATASETS.md).
 
 Expected local paths from the repository root:

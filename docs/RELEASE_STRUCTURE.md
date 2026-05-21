@@ -27,6 +27,7 @@ Traffic-Explainer/
     summarize_backend_results.py
   docs/
     DATA.md
+    DATA_REPRODUCTION.md
     PUBLIC_RELEASE_CHECKLIST.md
     REPRODUCTION.md
     RELEASE_STRUCTURE.md

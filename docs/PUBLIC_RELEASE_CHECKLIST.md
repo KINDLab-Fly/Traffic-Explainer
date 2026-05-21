@@ -6,6 +6,7 @@ Before pushing this repository to GitHub:
 - Add citation metadata, such as `CITATION.cff`, once the public title and author list are fixed.
 - Decide whether checkpoints should be released. If yes, upload them to an artifact host instead of committing them.
 - Decide whether processed datasets can be redistributed. If yes, document download URLs and checksums in `docs/DATA.md`.
+- Verify `docs/DATA_REPRODUCTION.md` matches the exact data release path.
 - Run a fresh smoke test from a clean clone with only `dataset/` and `dataset_localization/` linked locally.
 - Confirm `model/`, `res/`, `backend_logs/`, and datasets are not staged by git.
 - Update `docs/RESULTS_STATUS.md` with final completed run IDs before reporting numbers.

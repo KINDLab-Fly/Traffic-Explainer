@@ -18,6 +18,10 @@ Optional SHAP support:
 pip install -r requirements-optional.txt
 ```
 
+## Prepare Data
+
+Follow [DATA_REPRODUCTION.md](DATA_REPRODUCTION.md) to build or link the processed datasets expected by the code.
+
 ## Rebuild IOS/Android Data
 
 If the processed localization pickles are absent, rebuild them from the raw CSV files:
