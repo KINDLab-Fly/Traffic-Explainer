@@ -46,6 +46,11 @@ dataset/
 dataset_localization/
 ```
 
+Ready-to-use processed packages:
+
+- ISCX classification data: [Traffic-Explainer_dataset.zip](https://www.dropbox.com/scl/fi/mh00t4ycemjkirnjotojs/Traffic-Explainer_dataset.zip?rlkey=v4m5yf4rgfcux7pvz8ulzr7hz&st=bphzy61v&dl=0), extract so the repository has `dataset/`
+- IOS/Android localization data: [Traffic-Explainer_dataset_localization.zip](https://www.dropbox.com/scl/fi/bbckc21gericqyiooxq4c/Traffic-Explainer_dataset_localization.zip?rlkey=p0s0z0gcsbg50pglgw4t2oe00&st=bma0fbnd&dl=0), extract so the repository has `dataset_localization/`
+
 For local reproduction these may be symlinks:
 
 ```bash

@@ -20,6 +20,11 @@ dataset_localization/
   Android_Cross_Plat/
 ```
 
+Ready-to-use processed dataset archives:
+
+- [Traffic-Explainer_dataset.zip](https://www.dropbox.com/scl/fi/mh00t4ycemjkirnjotojs/Traffic-Explainer_dataset.zip?rlkey=v4m5yf4rgfcux7pvz8ulzr7hz&st=bphzy61v&dl=0): final ISCX arrays. Extract at the repository root so the top-level folder is `dataset/`.
+- [Traffic-Explainer_dataset_localization.zip](https://www.dropbox.com/scl/fi/bbckc21gericqyiooxq4c/Traffic-Explainer_dataset_localization.zip?rlkey=p0s0z0gcsbg50pglgw4t2oe00&st=bma0fbnd&dl=0): final IOS/Android localization CSVs and pickles. Extract at the repository root so the top-level folder is `dataset_localization/`.
+
 Source links:
 
 - Localization data comes from [WM-JayLab/NetBench](https://github.com/WM-JayLab/NetBench), package `Level` folder in the [NetBench Google Drive dataset folder](https://drive.google.com/drive/u/0/folders/1dYGHKKJR5WS4cXISk9AtfW_gB9mdC2ED).

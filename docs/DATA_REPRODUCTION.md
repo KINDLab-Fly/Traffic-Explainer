@@ -15,6 +15,13 @@ Choose the section that matches the files you already have.
 
 Traffic-Explainer uses two source families.
 
+Ready-to-use processed packages:
+
+- ISCX classification arrays: [Traffic-Explainer_dataset.zip](https://www.dropbox.com/scl/fi/mh00t4ycemjkirnjotojs/Traffic-Explainer_dataset.zip?rlkey=v4m5yf4rgfcux7pvz8ulzr7hz&st=bphzy61v&dl=0)
+- IOS/Android localization arrays: [Traffic-Explainer_dataset_localization.zip](https://www.dropbox.com/scl/fi/bbckc21gericqyiooxq4c/Traffic-Explainer_dataset_localization.zip?rlkey=p0s0z0gcsbg50pglgw4t2oe00&st=bma0fbnd&dl=0)
+
+Extract these archives at the repository root if you want to run with the processed datasets directly. The extracted top-level directories should be `dataset/` and `dataset_localization/`.
+
 Localization datasets:
 
 - Source repository: [WM-JayLab/NetBench](https://github.com/WM-JayLab/NetBench)
